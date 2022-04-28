@@ -32,3 +32,28 @@ public class TraceAppTest {
     }
 }
 ```
+```java
+    //trace
+    private String traceId;
+    private String spanId;
+
+    //req
+    private String remoteHost;
+    private Integer remotePort;
+    private String method;
+    private String url;
+    private final Map<String, String> params = new LinkedHashMap<>();
+    private final Map<String, String> reqHeaders = new LinkedHashMap();
+    private Object reqBody;
+
+    //resp
+    private int code;
+    private final Map<String, String> respHeaders = new LinkedHashMap();
+    private Object respBody;
+    private Throwable exception;
+
+    //time
+    private Long startTime;
+    private Long endTime;
+    private Long execTime;
+```
